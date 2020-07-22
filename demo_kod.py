@@ -20,7 +20,7 @@ def generate_report(label, model, fuel, price, img):
      context['acc'] = acc # словарь, содержащий объект картинки
 
      template.render(context) # передаем картинку в объект шаблона
-     template.save(label + '_' + model + '_' + str(datetime.datetime.now().date()) + '_' 'тачка.docx')
+     template.save(label + '_' + model + '_' + str(datetime.datetime.now().date()) + '_' 'DEMO.docx')
 
 lst = [['BMW','320i','10','2000000', 'bmw.jpg'], ['Subaru','Forester','8','800000','subaru.jpg']]
 for elem in lst:
